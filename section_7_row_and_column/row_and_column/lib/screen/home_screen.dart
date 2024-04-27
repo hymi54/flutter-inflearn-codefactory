@@ -12,48 +12,36 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: colors
-                  .map(
-                    (e) => Container(
-                      height: 50.0,
-                      width: 50.0,
-                      color: e,
-                    ),
-                  )
-                  .toList(),
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: colors
+                    .map(
+                      (e) => Container(
+                        height: 50.0,
+                        width: 50.0,
+                        color: e,
+                      ),
+                    )
+                    .toList()),
+            Container(
+              height: 50.0,
+              width: 50.0,
+              color: colors[1],
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  height: 50.0,
-                  width: 50.0,
-                  color: Colors.orange,
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: colors
-                  .map(
-                    (e) => Container(
-                  height: 50.0,
-                  width: 50.0,
-                  color: e,
-                ),
-              )
-                  .toList(),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  height: 50.0,
-                  width: 50.0,
-                  color: Colors.green,
-                ),
-              ],
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: colors
+                    .map(
+                      (e) => Container(
+                        height: 50.0,
+                        width: 50.0,
+                        color: e,
+                      ),
+                    )
+                    .toList()),
+            Container(
+              height: 50.0,
+              width: 50.0,
+              color: colors[3],
             ),
           ],
         ),
